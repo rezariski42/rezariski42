@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090A15"/>
+      <stop offset="35%" stop-color="#1B1035"/>
+      <stop offset="60%" stop-color="#44133E"/>
+      <stop offset="78%" stop-color="#8E2A36"/>
+      <stop offset="88%" stop-color="#D9532F"/>
+      <stop offset="96%" stop-color="#F39C12"/>
+      <stop offset="100%" stop-color="#FCD561"/>
+    </linearGradient>
+
+    <!-- Sun Glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF2B2" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#FDB833" stop-opacity="0.8"/>
+      <stop offset="65%" stop-color="#F37023" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D9532F" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Mountain Gradients -->
+    <linearGradient id="mountBack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#551D3B"/>
+      <stop offset="100%" stop-color="#1A0A1D"/>
+    </linearGradient>
+    <linearGradient id="mountMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34122C"/>
+      <stop offset="100%" stop-color="#0E0513"/>
+    </linearGradient>
+    <linearGradient id="foreForest" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#150818"/>
+      <stop offset="100%" stop-color="#08030A"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.85; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.03); }
+    }
+    @keyframes floatStar {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.9; }
+    }
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: 6px;
+      fill: #FFFFFF;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.8), 0 0 30px rgba(243,156,18,0.5);
+    }
+    .subtitle {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-weight: 600;
+      letter-spacing: 3px;
+      font-size: 14px;
+      fill: #FDE68A;
+      opacity: 0.95;
+    }
+    .badge-text {
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      fill: #FFFFFF;
+    }
+    .star { fill: #FFFFFF; }
+  </style>
+
+  <!-- Sky Base -->
+  <rect width="1200" height="400" fill="url(#skyGrad)"/>
+
+  <!-- Stars -->
+  <g opacity="0.6">
+    <circle cx="95" cy="45" r="1.2" class="star" />
+    <circle cx="210" cy="80" r="1.5" class="star" opacity="0.4" />
+    <circle cx="340" cy="30" r="1.8" class="star" />
+    <circle cx="480" cy="65" r="1" class="star" opacity="0.7" />
+    <circle cx="620" cy="35" r="1.4" class="star" />
+    <circle cx="790" cy="55" r="1.2" class="star" opacity="0.5" />
+    <circle cx="910" cy="25" r="1.6" class="star" />
+    <circle cx="1040" cy="70" r="1.2" class="star" />
+    <circle cx="1130" cy="40" r="1.5" class="star" opacity="0.8" />
+  </g>
+
+  <!-- Sunset Horizon Sun -->
+  <circle cx="600" cy="285" r="160" fill="url(#sunGlow)"/>
+  <circle cx="600" cy="285" r="55" fill="#FFFBEB" opacity="0.95"/>
+
+  <!-- Back Mountains -->
+  <path d="M0 310 L140 240 L310 275 L490 220 L600 245 L720 205 L880 260 L1050 215 L1200 280 L1200 400 L0 400 Z" fill="url(#mountBack)"/>
+
+  <!-- Mid Mountains -->
+  <path d="M0 340 L180 275 L360 310 L520 265 L670 295 L840 250 L1010 300 L1200 255 L1200 400 L0 400 Z" fill="url(#mountMid)"/>
+
+  <!-- Foreground Pine Forest Silhouettes -->
+  <path d="M0 400 L0 345 L15 352 L25 338 L35 350 L48 332 L60 355 L75 340 L88 358 L105 335 L120 352 L135 330 L150 354 L170 338 L190 358 L210 335 L230 352 L250 330 L275 356 L295 342 L315 360 L340 338 L365 358 L390 335 L415 355 L440 340 L465 360 L490 335 L515 355 L540 342 L570 362 L600 340 L630 360 L660 342 L690 360 L720 338 L750 358 L780 340 L810 360 L840 335 L870 356 L900 338 L930 360 L960 335 L990 355 L1020 340 L1050 360 L1080 338 L1110 355 L1140 335 L1170 358 L1200 340 L1200 400 Z" fill="url(#foreForest)"/>
+
+  <!-- Mist Overlay Layer -->
+  <rect y="320" width="1200" height="80" fill="url(#sunGlow)" opacity="0.15"/>
+
+  <!-- Center Identity Branding -->
+  <g text-anchor="middle">
+    <!-- Title -->
+    <text x="600" y="145" class="title" font-size="44">REYZHA RIZKY</text>
+    
+    <!-- Subtitle -->
+    <text x="600" y="180" class="subtitle">GAMEPLAY ARCHITECTURE • URP SHADER DEV • LINUX &amp; TOOLS</text>
+
+    <!-- Sleek Tag Pills -->
+    <g transform="translate(365, 205)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="145" height="28" rx="14" fill="#0D1117" fill-opacity="0.75" stroke="#F59E0B" stroke-width="1.2"/>
+      <circle cx="16" cy="14" r="4" fill="#10B981"/>
+      <text x="28" y="18" class="badge-text">UNITY 6 DEV</text>
+
+      <!-- Pill 2 -->
+      <rect x="160" y="0" width="150" height="28" rx="14" fill="#0D1117" fill-opacity="0.75" stroke="#EC4899" stroke-width="1.2"/>
+      <circle cx="176" cy="14" r="4" fill="#EC4899"/>
+      <text x="188" y="18" class="badge-text">HLSL / SHADERS</text>
+
+      <!-- Pill 3 -->
+      <rect x="325" y="0" width="145" height="28" rx="14" fill="#0D1117" fill-opacity="0.75" stroke="#3B82F6" stroke-width="1.2"/>
+      <circle cx="341" cy="14" r="4" fill="#3B82F6"/>
+      <text x="353" y="18" class="badge-text">CACHYOS LINUX</text>
+    </g>
+  </g>
+</svg>

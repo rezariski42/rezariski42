@@ -1,230 +1,206 @@
 <div align="center">
 
-<!-- HERO BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_color_list=0,2,#0D1117,#161B22,#3B82F6,#6366F1,#8B5CF6,#EC4899&height=260&section=header&text=Reyzha%20Rizky&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Unity%20Game%20Developer%20%E2%80%A2%20Graphics%20%26%20Tools%20Programmer&descFontSize=20&descAlignY=58&descAlign=50" width="100%" alt="Header Banner" />
-
-<!-- SUB-HEADER ANIMATION -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=818CF8&center=true&vCenter=true&width=650&lines=%E2%9A%A1+Architecting+Immersive+Worlds+in+Unity+6;%F0%9F%8E%AE+C%23+%E2%80%A2+Custom+Shaders+%E2%80%A2+Performance+Tuning;%F0%9F%9A%80+Exploring+Real-time+AI+%26+Procedural+Systems" alt="Typing SVG" />
+<!-- SUNSET PANORAMA HERO BANNER -->
+<a href="https://github.com/rezariski">
+  <img src="./assets/sunset-header.svg" width="100%" alt="Reyzha Rizky - Sunset Landscape Banner" />
 </a>
 
 <br/>
 
-<!-- WEBSITE NAVIGATION PILLS -->
+<!-- ANIMATED TERMINAL PUNCHLINE -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&pause=1200&color=F59E0B&center=true&vCenter=true&width=680&lines=%3E+Crafting+3D+interactive+worlds+with+Unity+6;%3E+Writing+custom+HLSL+foliage+%26+lighting+shaders;%3E+Benchmarking+real-time+performance+on+CachyOS+Linux" alt="Typing Subtitle" />
+</a>
+
+<br/>
+
+<!-- TOP HUD NAVIGATION -->
 <p align="center">
-  <a href="#-about-me"><b>[ 🎮 About ]</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#-core-specializations"><b>[ 🎯 Specializations ]</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#-tech-arsenal"><b>[ 🛠️ Tech Arsenal ]</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#-featured-projects"><b>[ 🚀 Projects ]</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#-github-telemetry"><b>[ 📊 Telemetry ]</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#-connect"><b>[ 📫 Connect ]</b></a>
+  <a href="#-overview"><code>// OVERVIEW</code></a> &nbsp;•&nbsp;
+  <a href="#-tech-arsenal"><code>// ARSENAL</code></a> &nbsp;•&nbsp;
+  <a href="#-selected-work"><code>// PROJECTS</code></a> &nbsp;•&nbsp;
+  <a href="#-systems--shaders"><code>// SHADERS & LABS</code></a> &nbsp;•&nbsp;
+  <a href="#-telemetry"><code>// TELEMETRY</code></a> &nbsp;•&nbsp;
+  <a href="#-contact"><code>// DISPATCH</code></a>
 </p>
 
-<!-- QUICK STATUS PILLS -->
+<!-- LIVE STATUS INDICATORS -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Building%20Games-success?style=for-the-badge&logo=unity&logoColor=white&color=6366F1" />
-  <img src="https://img.shields.io/badge/Primary%20Engine-Unity%206-black?style=for-the-badge&logo=unity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Workstation-CachyOS%20Linux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Location-Indonesia-orange?style=for-the-badge&logo=googlemaps&logoColor=white" />
+  <img src="https://img.shields.io/badge/ENGINE-Unity%206000.0-F59E0B?style=for-the-badge&logo=unity&logoColor=white&labelColor=1B1035" />
+  <img src="https://img.shields.io/badge/PIPELINE-URP%20%2F%20Custom%20HLSL-EC4899?style=for-the-badge&logo=shadertoy&logoColor=white&labelColor=1B1035" />
+  <img src="https://img.shields.io/badge/OS-CachyOS%20x86__64-3B82F6?style=for-the-badge&logo=archlinux&logoColor=white&labelColor=1B1035" />
+  <img src="https://img.shields.io/badge/STATUS-Active%20Development-10B981?style=for-the-badge&logo=codewars&logoColor=white&labelColor=1B1035" />
 </p>
 
 </div>
 
----
+<img src="./assets/sunset-divider.svg" width="100%" alt="Divider" />
 
-<a id="-about-me"></a>
-### 🎮 About Me
+<a id="-overview"></a>
+### ⚡ Overview
 
 <table>
   <tr>
-    <td width="60%" valign="top">
-      <h4>👋 Greetings, fellow creator!</h4>
+    <td width="65%" valign="top">
       <p>
-        I am <b>Reyzha Rizky</b>, an interactive software and game developer focused on bringing interactive 3D worlds to life. My primary playground is <b>Unity 6</b>, with heavy focus on clean C# architecture, real-time shader development, responsive character controls, and asset optimization.
+        Hey, I'm <b>Reyzha</b>. I build games and technical gameplay systems. Most of my day is spent inside <b>Unity 6</b> writing C# architecture, creating responsive character controllers, and writing custom shaders for lighting and foliage interaction.
       </p>
       <p>
-        When not crafting gameplay systems, I engineer developer tools, explore procedural generation, integrate voice/AI pipelines, and squeeze every drop of frame-rate performance out of Linux & desktop architectures.
+        I focus heavily on <b>game feel and frametime stability</b>: reducing draw calls, profiling memory allocations to avoid garbage collection spikes, and keeping rendering smooth even in dense 3D scenes.
       </p>
-      <ul>
-        <li>🌱 <b>Current Mission:</b> Building next-gen environment interactions & custom URP shader libraries.</li>
-        <li>💡 <b>Philosophy:</b> Performance first, clean modular code, frictionless player experience.</li>
-        <li>⚙️ <b>Development Rig:</b> Intel i5 + GTX 1660S on custom Linux kernel (CachyOS Wayland).</li>
-      </ul>
+      <pre>
+$ cat ~/profile.json
+{
+  "name": "Reyzha Rizky",
+  "role": "Game Developer / Technical Programmer",
+  "focus": ["Gameplay Mechanics", "Shader Development", "Linux Tooling"],
+  "engine": "Unity 6 (Universal Render Pipeline)",
+  "environment": "Arch / CachyOS (Linux Wayland)"
+}
+      </pre>
     </td>
-    <td width="40%" align="center" valign="middle">
-      <div style="padding: 10px;">
-        <img src="https://github.com/rezariski.png" width="160" style="border-radius: 50%; border: 3px solid #6366F1;" alt="Profile Picture" />
-        <br/><br/>
-        <code><b>rezariski</b></code>
-        <br/>
-        <sub>🎮 Game Dev | ⚡ Optimizer</sub>
-      </div>
+    <td width="35%" align="center" valign="middle">
+      <img src="https://github.com/rezariski.png" width="140" style="border-radius: 50%; border: 3px solid #F59E0B; box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);" alt="Reyzha Avatar" />
+      <br/><br/>
+      <b>Reyzha Rizky</b><br/>
+      <sub><code>@rezariski</code></sub><br/>
+      <small>Game Dev • Shaders • Linux</small>
     </td>
   </tr>
 </table>
 
----
-
-<a id="-core-specializations"></a>
-### 🎯 Core Specializations
-
-<table width="100%">
-  <tr>
-    <td width="33%" valign="top">
-      <h4 align="center">🕹️ Gameplay Architecture</h4>
-      <ul>
-        <li>Modular C# state machines</li>
-        <li>Humanoid Mecanim animation pipelines</li>
-        <li>Character locomotion & camera systems</li>
-        <li>Physics & collision tuning</li>
-      </ul>
-    </td>
-    <td width="33%" valign="top">
-      <h4 align="center">🎨 Visuals & Rendering</h4>
-      <ul>
-        <li>Unity URP / HDRP pipeline setup</li>
-        <li>Custom Shader Graph & HLSL nodes</li>
-        <li>Dynamic foliage, lighting & post-FX</li>
-        <li>Particle systems (VFX Graph)</li>
-      </ul>
-    </td>
-    <td width="33%" valign="top">
-      <h4 align="center">⚡ Performance & Tools</h4>
-      <ul>
-        <li>CPU/GPU profiling & draw-call reduction</li>
-        <li>Memory & texture compression workflows</li>
-        <li>Custom Unity Editor tooling & inspectors</li>
-        <li>AI voice & multi-agent pipeline integration</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
----
+<img src="./assets/sunset-divider.svg" width="100%" alt="Divider" />
 
 <a id="-tech-arsenal"></a>
 ### 🛠️ Tech Arsenal
 
 <div align="center">
 
-#### 🎮 Game Engine & 3D Tools
-<p>
-  <img src="https://img.shields.io/badge/Unity_6-000000?style=for-the-badge&logo=unity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Blender_3D-F5792A?style=for-the-badge&logo=blender&logoColor=white" />
-  <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" />
-  <img src="https://img.shields.io/badge/Shader_Graph-4C51BF?style=for-the-badge&logo=opengl&logoColor=white" />
-</p>
-
-#### 💻 Programming Languages & Runtime
-<p>
-  <img src="https://skillicons.dev/icons?i=cs,cpp,python,bash,js,ts&theme=dark" alt="Languages" />
-</p>
-
-#### 🐧 Operating System & Workflow
-<p>
-  <img src="https://skillicons.dev/icons?i=linux,arch,git,github,vscode,neovim,electron&theme=dark" alt="Workflow" />
-</p>
+| Domain | Weapons of Choice |
+| :--- | :--- |
+| **Engines & Frameworks** | <img src="https://img.shields.io/badge/Unity%206-000000?style=flat-square&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/Universal%20Render%20Pipeline-3D124D?style=flat-square&logo=unity"/> <img src="https://img.shields.io/badge/Android%20SDK-3DDC84?style=flat-square&logo=androidstudio&logoColor=white"/> <img src="https://img.shields.io/badge/.NET%208.0-512BD4?style=flat-square&logo=dotnet&logoColor=white"/> |
+| **Core Languages** | <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white"/> <img src="https://img.shields.io/badge/HLSL%20%2F%20ShaderLab-F59E0B?style=flat-square&logo=opengl&logoColor=white"/> <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white"/> <img src="https://img.shields.io/badge/Python%203-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Bash%20%2F%20Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white"/> |
+| **3D & Asset Creation** | <img src="https://img.shields.io/badge/Blender%203D-E87D0D?style=flat-square&logo=blender&logoColor=white"/> <img src="https://img.shields.io/badge/Shader%20Graph-8E2A36?style=flat-square"/> <img src="https://img.shields.io/badge/Krita%20%2F%20Texture%20Work-3498DB?style=flat-square&logo=krita&logoColor=white"/> |
+| **System & Environment** | <img src="https://img.shields.io/badge/CachyOS%20Linux-1793D1?style=flat-square&logo=archlinux&logoColor=white"/> <img src="https://img.shields.io/badge/KDE%20Plasma%20Wayland-1D99F3?style=flat-square&logo=kde&logoColor=white"/> <img src="https://img.shields.io/badge/Git%20VCS-F05032?style=flat-square&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/> |
 
 </div>
 
----
+<br/>
 
-<a id="-featured-projects"></a>
-### 🚀 Featured Project Showcases
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=unity,cs,cpp,python,blender,linux,git,github,vscode,bash&perline=10" alt="Tech Stack Badges" />
+</div>
+
+<img src="./assets/sunset-divider.svg" width="100%" alt="Divider" />
+
+<a id="-selected-work"></a>
+### 🚀 Selected Work & Experiments
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🌲 3D Immersive Environment System</h3>
-      <p>Interactive 3D environment built in Unity featuring dynamic day/night cycles, responsive foliage shaders, and optimized LOD trees for high framerate rendering.</p>
+      <h4>🌲 3D Foliage & Forest Environment</h4>
+      <p>Universal Render Pipeline environment prototype with custom wind sway vertex shaders, dynamic day/night light transitions, and foliage density optimizations.</p>
       <p>
-        <img src="https://img.shields.io/badge/Unity-2026-blue?style=flat-square&logo=unity" />
-        <img src="https://img.shields.io/badge/Pipeline-URP-blueviolet?style=flat-square" />
-        <img src="https://img.shields.io/badge/Shaders-Custom_HLSL-success?style=flat-square" />
+        <code>Unity 6</code> • <code>URP</code> • <code>Shader Graph</code> • <code>Lighting</code>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🎙️ Fish-TTS Desktop Integration</h3>
-      <p>Cross-platform real-time neural speech synthesis workstation built with Electron, Python runtime, and GPU-accelerated local inferencing.</p>
+      <h4>🎮 Third-Person Locomotion Controller</h4>
+      <p>State-machine driven character movement setup featuring physics-based slope sliding, root motion blending, input buffering, and camera collision logic.</p>
       <p>
-        <img src="https://img.shields.io/badge/App-Electron-47848F?style=flat-square&logo=electron" />
-        <img src="https://img.shields.io/badge/Engine-Python_AI-3776AB?style=flat-square&logo=python" />
-        <img src="https://img.shields.io/badge/Platform-Linux_Wayland-1793D1?style=flat-square&logo=archlinux" />
+        <code>C#</code> • <code>Mecanim</code> • <code>Input System</code> • <code>Physics</code>
       </p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🤖 OmO Multi-Agent System Core</h3>
-      <p>Local intelligent routing setup bridging local models via 9Router with automated terminal workspaces, UI/UX engines, and game design skills.</p>
+      <h4>🎙️ Fish-TTS Desktop Audio Runtime</h4>
+      <p>Local neural voice synthesis engine integrated into a responsive desktop client for zero-latency Indonesian/English voice generation.</p>
       <p>
-        <img src="https://img.shields.io/badge/Stack-NodeJS-339933?style=flat-square&logo=nodedotjs" />
-        <img src="https://img.shields.io/badge/Routing-9Router-purple?style=flat-square" />
-        <img src="https://img.shields.io/badge/Agent-Autonomous-red?style=flat-square" />
+        <code>Python</code> • <code>Electron</code> • <code>CUDA / GPU</code> • <code>Wayland</code>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>⚔️ Modular Combat & Character Rig</h3>
-      <p>Physics-driven humanoid locomotion and character controller with combo inputs, smooth root-motion blending, and dynamic hitbox verification.</p>
+      <h4>🤖 OmO Native Multi-Agent System</h4>
+      <p>Autonomous CLI agent workflow routed through local 9Router inference models to automate codebase refactoring, UI/UX tasks, and Unity game planning.</p>
       <p>
-        <img src="https://img.shields.io/badge/Lang-C%23-239120?style=flat-square&logo=csharp" />
-        <img src="https://img.shields.io/badge/System-Mecanim-black?style=flat-square&logo=unity" />
-        <img src="https://img.shields.io/badge/Architecture-State_Machine-orange?style=flat-square" />
+        <code>Node.js</code> • <code>9Router API</code> • <code>OpenCode</code> • <code>Arch Linux</code>
       </p>
     </td>
   </tr>
 </table>
 
----
+<img src="./assets/sunset-divider.svg" width="100%" alt="Divider" />
 
-<a id="-github-telemetry"></a>
-### 📊 GitHub Telemetry & Stats
+<a id="-systems--shaders"></a>
+### 🧪 Systems & Lab Experiments
+
+<details>
+  <summary><b>▶ Click to expand: Technical Pipeline & Architecture Notes</b></summary>
+  <br/>
+
+  #### 🕹️ Gameplay Engineering
+  - **State Pattern**: Hierarchical state machine for Player States (`Idle`, `Sprint`, `Jump`, `Fall`, `Attack`). Decoupled from input polling.
+  - **ScriptableObject Architecture**: Data-driven weapon stats, inventory schemas, and event channels for zero tight-coupling between game systems.
+  - **Performance Rules**: Zero `FindObjectsOfType`, zero boxing allocations in hot update loops, pre-allocated object pools for audio and particle emitters.
+
+  #### 🎨 Shading & Rendering
+  - **Custom HLSL Subshaders**: Interactive wind displacement using vertex colors as bend weight maps.
+  - **Shadow & Depth Optimization**: Cascade shadow tuning and baked probe lighting for seamless indoor-to-outdoor transitions.
+</details>
+
+<img src="./assets/sunset-divider.svg" width="100%" alt="Divider" />
+
+<a id="-telemetry"></a>
+### 📊 Telemetry & Activity
 
 <div align="center">
 
-<table border="0">
+<table>
   <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats-pi-six.vercel.app/api?username=rezariski&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117&title_color=7AA2F7&icon_color=BB9AF7&text_color=C0CAF5" width="100%" alt="GitHub Overall Stats" />
+    <td width="50%" align="center">
+      <img src="https://github-readme-stats-pi-six.vercel.app/api?username=rezariski&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117&title_color=F59E0B&icon_color=EC4899&text_color=FDE68A" width="100%" alt="GitHub Overall Stats" />
     </td>
-    <td align="center" width="50%">
-      <img src="https://streak-stats.demolab.com/?user=rezariski&theme=tokyonight&hide_border=true&background=0D1117&ring=7AA2F7&fire=FF9E3B&currStreakLabel=7AA2F7&sideLabels=C0CAF5&dates=A9B1D6" width="100%" alt="GitHub Streak Stats" />
+    <td width="50%" align="center">
+      <img src="https://streak-stats.demolab.com/?user=rezariski&theme=tokyonight&hide_border=true&background=0D1117&ring=F59E0B&fire=EC4899&currStreakLabel=F59E0B&sideLabels=FDE68A&dates=E2E8F0" width="100%" alt="GitHub Streak Stats" />
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="https://github-readme-stats-pi-six.vercel.app/api/top-langs/?username=rezariski&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7AA2F7&text_color=C0CAF5" width="60%" alt="Top Languages" />
+      <img src="https://github-readme-stats-pi-six.vercel.app/api/top-langs/?username=rezariski&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&text_color=FDE68A" width="65%" alt="Top Languages" />
     </td>
   </tr>
 </table>
 
 </div>
 
----
+<img src="./assets/sunset-divider.svg" width="100%" alt="Divider" />
 
-<a id="-connect"></a>
-### 📫 Connect & Collaborate
+<a id="-contact"></a>
+### 📬 Dispatch & Links
 
 <div align="center">
 
-<p>Feel free to reach out for game development collaboration, custom tooling, or tech discussions!</p>
+<p>
+  Open for indie collaborations, gameplay programming tasks, and technical discussions.
+</p>
 
 <p>
   <a href="https://github.com/rezariski">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub-rezariski-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   <a href="mailto:rezariski@users.noreply.github.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://discord.com">
-    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+    <img src="https://img.shields.io/badge/Email-Direct%20Message-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://unity.com">
-    <img src="https://img.shields.io/badge/Community-Unity_Discussions-000000?style=for-the-badge&logo=unity&logoColor=white" />
+    <img src="https://img.shields.io/badge/Unity%20Forum-Active-000000?style=for-the-badge&logo=unity&logoColor=white" />
   </a>
 </p>
 
-<!-- FOOTER WAVE -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_color_list=0,2,#EC4899,#8B5CF6,#6366F1,#161B22,#0D1117&height=130&section=footer" width="100%" alt="Footer Banner" />
+<br/>
+
+<!-- SUNSET FOOTER WAVE -->
+<img src="./assets/sunset-footer.svg" width="100%" alt="Sunset Footer" />
 
 </div>

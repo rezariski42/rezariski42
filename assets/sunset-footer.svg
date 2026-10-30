@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="40%" stop-color="#1B1035"/>
+      <stop offset="70%" stop-color="#3F1237"/>
+      <stop offset="90%" stop-color="#8E2A36"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="footTree" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#140717"/>
+      <stop offset="100%" stop-color="#070208"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="160" fill="url(#footSky)"/>
+
+  <!-- Inverted forest / mountain bottom silhouette -->
+  <path d="M0 160 L0 90 L20 102 L40 85 L65 105 L90 78 L120 100 L150 82 L180 104 L210 75 L245 98 L280 80 L315 105 L350 78 L390 102 L430 80 L470 105 L510 75 L555 102 L600 78 L645 102 L690 75 L730 105 L770 80 L810 102 L850 78 L885 105 L920 80 L955 98 L990 75 L1020 104 L1050 82 L1080 100 L1110 78 L1135 105 L1160 85 L1180 102 L1200 90 L1200 160 Z" fill="url(#footTree)"/>
+
+  <!-- Footer Text -->
+  <text x="600" y="140" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2" fill="#FDE68A" opacity="0.9">
+    DESIGNED &amp; ENGINEERED FOR IMMERSIVE REALITIES • REYZHA RIZKY © 2026
+  </text>
+</svg>
