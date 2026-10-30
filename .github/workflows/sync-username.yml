@@ -1,0 +1,77 @@
+name: Sync Repository & Username Identity
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    # Run once daily to catch any external username or repo rename
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect and Update Username References
+        run: |
+          NEW_OWNER="${{ github.repository_owner }}"
+          REPO_NAME="${{ github.event.repository.name }}"
+          echo "Current Repository Owner: $NEW_OWNER"
+          echo "Current Repository Name: $REPO_NAME"
+
+          python3 - << EOF
+          import os
+          import re
+
+          new_owner = "$NEW_OWNER"
+          repo_name = "$REPO_NAME"
+
+          files_to_update = [
+              "README.md",
+              "assets/sunset-header.svg"
+          ]
+
+          # Regex to find rezariski or previous owner patterns
+          for filepath in files_to_update:
+              if not os.path.exists(filepath):
+                  continue
+              with open(filepath, "r", encoding="utf-8") as f:
+                  content = f.read()
+
+              # Update github.com/xxx/xxx URLs and badge usernames
+              updated = re.sub(r'(github\.com/)[A-Za-z0-9_-]+(/[A-Za-z0-9_-]+)?', rf'\g<1>{new_owner}/{repo_name}', content)
+              updated = re.sub(r'(\?user=)[A-Za-z0-9_-]+', rf'\g<1>{new_owner}', updated)
+              updated = re.sub(r'(\?username=)[A-Za-z0-9_-]+', rf'\g<1>{new_owner}', updated)
+              updated = re.sub(r'(badge/REPO-)[^-\s]+', rf'\g<1>{new_owner}%2F{repo_name}', updated)
+              updated = re.sub(r'(badge/USER-)[^-\s]+', rf'\g<1>{new_owner}', updated)
+              updated = re.sub(r'(\[USER\]\s+:\s+)[A-Za-z0-9_-]+', rf'\g<1>{new_owner}', updated)
+              updated = re.sub(r'(\[REPO\]\s+:\s+github\.com/)[A-Za-z0-9_-]+/[A-Za-z0-9_-]+', rf'\g<1>{new_owner}/{repo_name}', updated)
+
+              if updated != content:
+                  print(f"Updating references in {filepath}")
+                  with open(filepath, "w", encoding="utf-8") as f:
+                      f.write(updated)
+              else:
+                  print(f"No changes needed in {filepath}")
+          EOF
+
+      - name: Commit & Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status -s) ]]; then
+            git add README.md assets/sunset-header.svg
+            git commit -m "chore(auto): synchronize username and repository identity to ${{ github.repository_owner }}"
+            git push
+          else
+            echo "Everything up to date."
+          fi
