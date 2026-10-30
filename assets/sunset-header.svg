@@ -1,134 +1,152 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
   <defs>
-    <!-- Sky Gradient -->
-    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#090A15"/>
-      <stop offset="35%" stop-color="#1B1035"/>
-      <stop offset="60%" stop-color="#44133E"/>
-      <stop offset="78%" stop-color="#8E2A36"/>
-      <stop offset="88%" stop-color="#D9532F"/>
-      <stop offset="96%" stop-color="#F39C12"/>
-      <stop offset="100%" stop-color="#FCD561"/>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080911"/>
+      <stop offset="40%" stop-color="#140E26"/>
+      <stop offset="70%" stop-color="#2D1136"/>
+      <stop offset="88%" stop-color="#581635"/>
+      <stop offset="96%" stop-color="#C2410C"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
     </linearGradient>
 
-    <!-- Sun Glow -->
-    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFF2B2" stop-opacity="1"/>
-      <stop offset="30%" stop-color="#FDB833" stop-opacity="0.8"/>
-      <stop offset="65%" stop-color="#F37023" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#D9532F" stop-opacity="0"/>
+    <!-- Glowing Grid Horizon -->
+    <linearGradient id="gridGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#EC4899" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#080911" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Sun Disc -->
+    <radialGradient id="cyberSun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#FDE047" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#F97316" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E11D48" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Mountain Gradients -->
-    <linearGradient id="mountBack" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#551D3B"/>
-      <stop offset="100%" stop-color="#1A0A1D"/>
-    </linearGradient>
-    <linearGradient id="mountMid" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#34122C"/>
-      <stop offset="100%" stop-color="#0E0513"/>
-    </linearGradient>
-    <linearGradient id="foreForest" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#150818"/>
-      <stop offset="100%" stop-color="#08030A"/>
+    <linearGradient id="neonBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="25%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="75%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#10B981"/>
     </linearGradient>
 
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
+    <!-- City / Server Node Silhouettes -->
+    <linearGradient id="citySil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1F0D24"/>
+      <stop offset="100%" stop-color="#08030B"/>
+    </linearGradient>
   </defs>
 
   <style>
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.85; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.03); }
-    }
-    @keyframes floatStar {
-      0%, 100% { opacity: 0.3; }
-      50% { opacity: 0.9; }
-    }
-    .title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 900;
-      letter-spacing: 6px;
+    .brand-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 950;
+      letter-spacing: 7px;
       fill: #FFFFFF;
-      text-shadow: 0 4px 20px rgba(0,0,0,0.8), 0 0 30px rgba(243,156,18,0.5);
+      text-shadow: 0 4px 25px rgba(0,0,0,0.9), 0 0 35px rgba(245,158,11,0.6);
     }
-    .subtitle {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-      font-weight: 600;
-      letter-spacing: 3px;
-      font-size: 14px;
+    .brand-sub {
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 700;
+      letter-spacing: 3.5px;
+      font-size: 13.5px;
       fill: #FDE68A;
-      opacity: 0.95;
     }
-    .badge-text {
-      font-family: ui-monospace, Menlo, Consolas, monospace;
+    .hud-tag {
+      font-family: "JetBrains Mono", ui-monospace, monospace;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       fill: #FFFFFF;
     }
-    .star { fill: #FFFFFF; }
+    .coord {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      fill: #F59E0B;
+      opacity: 0.6;
+    }
   </style>
 
   <!-- Sky Base -->
-  <rect width="1200" height="400" fill="url(#skyGrad)"/>
+  <rect width="1200" height="420" fill="url(#bgGrad)"/>
 
-  <!-- Stars -->
-  <g opacity="0.6">
-    <circle cx="95" cy="45" r="1.2" class="star" />
-    <circle cx="210" cy="80" r="1.5" class="star" opacity="0.4" />
-    <circle cx="340" cy="30" r="1.8" class="star" />
-    <circle cx="480" cy="65" r="1" class="star" opacity="0.7" />
-    <circle cx="620" cy="35" r="1.4" class="star" />
-    <circle cx="790" cy="55" r="1.2" class="star" opacity="0.5" />
-    <circle cx="910" cy="25" r="1.6" class="star" />
-    <circle cx="1040" cy="70" r="1.2" class="star" />
-    <circle cx="1130" cy="40" r="1.5" class="star" opacity="0.8" />
+  <!-- Tech Grid Background Lines -->
+  <g opacity="0.18" stroke="#F59E0B" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="420"/>
+    <line x1="300" y1="0" x2="300" y2="420"/>
+    <line x1="500" y1="0" x2="500" y2="420"/>
+    <line x1="700" y1="0" x2="700" y2="420"/>
+    <line x1="900" y1="0" x2="900" y2="420"/>
+    <line x1="1100" y1="0" x2="1100" y2="420"/>
   </g>
 
-  <!-- Sunset Horizon Sun -->
-  <circle cx="600" cy="285" r="160" fill="url(#sunGlow)"/>
-  <circle cx="600" cy="285" r="55" fill="#FFFBEB" opacity="0.95"/>
+  <!-- Technical Overlay HUD Coordinates -->
+  <text x="35" y="35" class="coord">SYS::ONLINE [CACHYOS_X86_64]</text>
+  <text x="1040" y="35" class="coord">SEC::LEVEL_0 // ENCRYPTED</text>
+  <circle cx="20" cy="32" r="4" fill="#10B981"/>
 
-  <!-- Back Mountains -->
-  <path d="M0 310 L140 240 L310 275 L490 220 L600 245 L720 205 L880 260 L1050 215 L1200 280 L1200 400 L0 400 Z" fill="url(#mountBack)"/>
+  <!-- Sinking Sun -->
+  <circle cx="600" cy="275" r="140" fill="url(#cyberSun)"/>
+  <circle cx="600" cy="275" r="50" fill="#FFFBEB" opacity="0.95"/>
 
-  <!-- Mid Mountains -->
-  <path d="M0 340 L180 275 L360 310 L520 265 L670 295 L840 250 L1010 300 L1200 255 L1200 400 L0 400 Z" fill="url(#mountMid)"/>
+  <!-- Server Skyline / City Silhouette -->
+  <path d="M0 420 L0 320 L35 320 L35 300 L55 300 L55 330 L95 330 L95 280 L120 280 L120 335 L170 335 L170 310 L200 310 L200 270 L225 270 L225 325 L280 325 L280 295 L310 295 L310 340 L380 340 L380 285 L420 285 L420 330 L480 330 L480 260 L505 260 L505 325 L550 325 L550 335 L650 335 L650 270 L685 270 L685 320 L740 320 L740 290 L770 290 L770 335 L830 335 L830 275 L865 275 L865 330 L915 330 L915 305 L950 305 L950 325 L1010 325 L1010 265 L1040 265 L1040 330 L1100 330 L1100 295 L1135 295 L1135 335 L1200 335 L1200 420 Z" fill="url(#citySil)"/>
 
-  <!-- Foreground Pine Forest Silhouettes -->
-  <path d="M0 400 L0 345 L15 352 L25 338 L35 350 L48 332 L60 355 L75 340 L88 358 L105 335 L120 352 L135 330 L150 354 L170 338 L190 358 L210 335 L230 352 L250 330 L275 356 L295 342 L315 360 L340 338 L365 358 L390 335 L415 355 L440 340 L465 360 L490 335 L515 355 L540 342 L570 362 L600 340 L630 360 L660 342 L690 360 L720 338 L750 358 L780 340 L810 360 L840 335 L870 356 L900 338 L930 360 L960 335 L990 355 L1020 340 L1050 360 L1080 338 L1110 355 L1140 335 L1170 358 L1200 340 L1200 400 Z" fill="url(#foreForest)"/>
-
-  <!-- Mist Overlay Layer -->
-  <rect y="320" width="1200" height="80" fill="url(#sunGlow)" opacity="0.15"/>
+  <!-- Perspective Horizon Grid Floor -->
+  <g stroke="url(#gridGrad)" stroke-width="1.2" opacity="0.75">
+    <line x1="600" y1="330" x2="0" y2="420"/>
+    <line x1="600" y1="330" x2="150" y2="420"/>
+    <line x1="600" y1="330" x2="300" y2="420"/>
+    <line x1="600" y1="330" x2="450" y2="420"/>
+    <line x1="600" y1="330" x2="600" y2="420"/>
+    <line x1="600" y1="330" x2="750" y2="420"/>
+    <line x1="600" y1="330" x2="900" y2="420"/>
+    <line x1="600" y1="330" x2="1050" y2="420"/>
+    <line x1="600" y1="330" x2="1200" y2="420"/>
+    <!-- Horizontal Perspective Crosslines -->
+    <line x1="450" y1="345" x2="750" y2="345"/>
+    <line x1="320" y1="365" x2="880" y2="365"/>
+    <line x1="160" y1="390" x2="1040" y2="390"/>
+    <line x1="0" y1="418" x2="1200" y2="418" stroke="#F59E0B" stroke-width="2"/>
+  </g>
 
   <!-- Center Identity Branding -->
   <g text-anchor="middle">
-    <!-- Title -->
-    <text x="600" y="145" class="title" font-size="44">REYZHA RIZKY</text>
-    
-    <!-- Subtitle -->
-    <text x="600" y="180" class="subtitle">GAMEPLAY ARCHITECTURE • URP SHADER DEV • LINUX &amp; TOOLS</text>
+    <!-- Main Name -->
+    <text x="600" y="140" class="brand-title" font-size="46">REYZHA RIZKY</text>
 
-    <!-- Sleek Tag Pills -->
-    <g transform="translate(365, 205)">
-      <!-- Pill 1 -->
-      <rect x="0" y="0" width="145" height="28" rx="14" fill="#0D1117" fill-opacity="0.75" stroke="#F59E0B" stroke-width="1.2"/>
-      <circle cx="16" cy="14" r="4" fill="#10B981"/>
-      <text x="28" y="18" class="badge-text">UNITY 6 DEV</text>
+    <!-- Spectrum Tagline -->
+    <text x="600" y="176" class="brand-sub">FULL-STACK • GAME SYSTEMS • NETWORKING • OFFENSIVE SECURITY</text>
 
-      <!-- Pill 2 -->
-      <rect x="160" y="0" width="150" height="28" rx="14" fill="#0D1117" fill-opacity="0.75" stroke="#EC4899" stroke-width="1.2"/>
-      <circle cx="176" cy="14" r="4" fill="#EC4899"/>
-      <text x="188" y="18" class="badge-text">HLSL / SHADERS</text>
+    <!-- Multi-Discipline Pill Badges -->
+    <g transform="translate(145, 202)">
+      <!-- Pill 1: Full-Stack -->
+      <rect x="0" y="0" width="165" height="30" rx="15" fill="#0D1117" fill-opacity="0.85" stroke="#3B82F6" stroke-width="1.3"/>
+      <circle cx="16" cy="15" r="4.5" fill="#3B82F6"/>
+      <text x="28" y="19" class="hud-tag">LARAVEL &amp; FULLSTACK</text>
 
-      <!-- Pill 3 -->
-      <rect x="325" y="0" width="145" height="28" rx="14" fill="#0D1117" fill-opacity="0.75" stroke="#3B82F6" stroke-width="1.2"/>
-      <circle cx="341" cy="14" r="4" fill="#3B82F6"/>
-      <text x="353" y="18" class="badge-text">CACHYOS LINUX</text>
+      <!-- Pill 2: Game Dev -->
+      <rect x="180" y="0" width="175" height="30" rx="15" fill="#0D1117" fill-opacity="0.85" stroke="#F59E0B" stroke-width="1.3"/>
+      <circle cx="196" cy="15" r="4.5" fill="#F59E0B"/>
+      <text x="208" y="19" class="hud-tag">UNITY 6 • ROBLOX LUAU</text>
+
+      <!-- Pill 3: Infrastructure -->
+      <rect x="370" y="0" width="180" height="30" rx="15" fill="#0D1117" fill-opacity="0.85" stroke="#10B981" stroke-width="1.3"/>
+      <circle cx="386" cy="15" r="4.5" fill="#10B981"/>
+      <text x="398" y="19" class="hud-tag">MIKROTIK &amp; NETWORKS</text>
+
+      <!-- Pill 4: Mobile & Low-Level -->
+      <rect x="565" y="0" width="165" height="30" rx="15" fill="#0D1117" fill-opacity="0.85" stroke="#EC4899" stroke-width="1.3"/>
+      <circle cx="581" cy="15" r="4.5" fill="#EC4899"/>
+      <text x="593" y="19" class="hud-tag">ROOT • JAILBREAK</text>
+
+      <!-- Pill 5: Bug Hunting -->
+      <rect x="745" y="0" width="160" height="30" rx="15" fill="#0D1117" fill-opacity="0.85" stroke="#8B5CF6" stroke-width="1.3"/>
+      <circle cx="761" cy="15" r="4.5" fill="#8B5CF6"/>
+      <text x="773" y="19" class="hud-tag">BUG HUNTING &amp; SEC</text>
     </g>
   </g>
 </svg>
