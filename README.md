@@ -221,7 +221,7 @@ STATUS     : Systems Active // All Nodes OK
       </div>
       <div align="center" style="padding-top: 10px;">
         <img src="https://img.shields.io/badge/USER-rezariski42-F59E0B?style=for-the-badge&logo=github&logoColor=white&labelColor=140E26" alt="User Badge" />
-        <img src="https://img.shields.io/badge/REPO-rezariski42%2Frezariski42-3B82F6?style=for-the-badge&logo=git&logoColor=white&labelColor=140E26" alt="Repo Badge" />
+        <img src="https://img.shields.io/badge/REPO-rezariski42%2Frezariski42?style=for-the-badge&logo=git&logoColor=white&labelColor=140E26" alt="Repo Badge" />
         <img src="https://img.shields.io/github/last-commit/rezariski42/rezariski42?style=for-the-badge&logo=github&color=10B981&label=LAST%20COMMIT&labelColor=140E26" alt="Last Commit Badge" />
         <img src="https://img.shields.io/github/repo-size/rezariski42/rezariski42?style=for-the-badge&logo=database&color=EC4899&label=REPO%20SIZE&labelColor=140E26" alt="Repo Size Badge" />
       </div>
