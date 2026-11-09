@@ -22,54 +22,69 @@ jobs:
           fetch-depth: 0
 
       - name: Detect and Update Username References
+        env:
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
         run: |
-          NEW_OWNER="${{ github.repository_owner }}"
-          REPO_NAME="${{ github.event.repository.name }}"
-          echo "Current Repository Owner: $NEW_OWNER"
-          echo "Current Repository Name: $REPO_NAME"
-
-          python3 - << EOF
+          python3 - << 'PY'
           import os
           import re
+          import glob
 
-          new_owner = "$NEW_OWNER"
-          repo_name = "$REPO_NAME"
+          owner = os.environ["OWNER"]
+          repo = os.environ["REPO"]
+          # Historical usernames this repository has been published under.
+          olds = ["rezariski", "onegamer042-sys"]
 
-          files_to_update = [
-              "README.md",
-              "assets/sunset-header.svg"
-          ]
+          files = ["README.md"] + glob.glob("assets/*.svg")
 
-          # Regex to find rezariski or previous owner patterns
-          for filepath in files_to_update:
-              if not os.path.exists(filepath):
+          def url_sub(text, pattern, repl):
+              return re.sub(pattern, repl, text)
+
+          for path in files:
+              if not os.path.exists(path):
                   continue
-              with open(filepath, "r", encoding="utf-8") as f:
-                  content = f.read()
+              with open(path, "r", encoding="utf-8") as f:
+                  original = f.read()
+              text = original
 
-              # Update github.com/xxx/xxx URLs and badge usernames
-              updated = re.sub(r'(github\.com/)[A-Za-z0-9_-]+(/[A-Za-z0-9_-]+)?', rf'\g<1>{new_owner}/{repo_name}', content)
-              updated = re.sub(r'(\?user=)[A-Za-z0-9_-]+', rf'\g<1>{new_owner}', updated)
-              updated = re.sub(r'(\?username=)[A-Za-z0-9_-]+', rf'\g<1>{new_owner}', updated)
-              updated = re.sub(r'(badge/REPO-)[^-\s]+', rf'\g<1>{new_owner}%2F{repo_name}', updated)
-              updated = re.sub(r'(badge/USER-)[^-\s]+', rf'\g<1>{new_owner}', updated)
-              updated = re.sub(r'(\[USER\]\s+:\s+)[A-Za-z0-9_-]+', rf'\g<1>{new_owner}', updated)
-              updated = re.sub(r'(\[REPO\]\s+:\s+github\.com/)[A-Za-z0-9_-]+/[A-Za-z0-9_-]+', rf'\g<1>{new_owner}/{repo_name}', updated)
+              for old in olds:
+                  if old == owner:
+                      continue
+                  o = re.escape(old)
+                  text = url_sub(text, rf"github\.com/{o}\.png", f"github.com/{owner}.png")
+                  text = url_sub(text, rf"github\.com/{o}/{o}\.github\.io", f"github.com/{owner}/{repo}.github.io")
+                  text = url_sub(text, rf"github\.com/{o}/{o}(?![A-Za-z0-9_-])", f"github.com/{owner}/{repo}")
+                  text = url_sub(text, rf"github\.com/{o}/(?=[A-Za-z0-9_-])", f"github.com/{owner}/")
+                  text = url_sub(text, rf"github\.com/{o}(?![A-Za-z0-9_.-])", f"github.com/{owner}")
+                  text = url_sub(text, rf"@{o}(?![A-Za-z0-9_-])", f"@{owner}")
+                  text = url_sub(text, rf"operator㉿{o}(?![A-Za-z0-9_-])", f"operator㉿{owner}")
+                  text = url_sub(text, rf"operator@{o}(?![A-Za-z0-9_-])", f"operator@{owner}")
+                  text = url_sub(text, rf"\[IDENTITY\]\s*:\s*{o}(?![A-Za-z0-9_-])", f"[IDENTITY] : {owner}")
+                  text = url_sub(text, rf"badge/USER-{o}(?![A-Za-z0-9_-])", f"badge/USER-{owner}")
+                  text = url_sub(text, rf"badge/GitHub-{o}(?![A-Za-z0-9_-])", f"badge/GitHub-{owner}")
+                  text = url_sub(text, rf"\[USER\]\s*:\s*{o}(?![A-Za-z0-9_-])", f"[USER] : {owner}")
 
-              if updated != content:
-                  print(f"Updating references in {filepath}")
-                  with open(filepath, "w", encoding="utf-8") as f:
-                      f.write(updated)
+              # Normalize account/repo specific badges and query params.
+              text = url_sub(text, r"badge/REPO-[^?\"\s]*", f"badge/REPO-{owner}%2F{repo}")
+              text = url_sub(text, r"(github/last-commit/)[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", rf"\g<1>{owner}/{repo}")
+              text = url_sub(text, r"(github/repo-size/)[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", rf"\g<1>{owner}/{repo}")
+              text = url_sub(text, r"([?&](?:user|username)=)[A-Za-z0-9_.-]+", rf"\g<1>{owner}")
+
+              if text != original:
+                  print(f"Updating references in {path}")
+                  with open(path, "w", encoding="utf-8") as f:
+                      f.write(text)
               else:
-                  print(f"No changes needed in {filepath}")
-          EOF
+                  print(f"No changes needed in {path}")
+          PY
 
       - name: Commit & Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           if [[ -n $(git status -s) ]]; then
-            git add README.md assets/sunset-header.svg
+            git add README.md assets
             git commit -m "chore(auto): synchronize username and repository identity to ${{ github.repository_owner }}"
             git push
           else

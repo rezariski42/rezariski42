@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- FULL-SPECTRUM SUNSET CYBER HERO BANNER -->
-<a href="https://github.com/rezariski42/rezariski42">
+<a href="https://github.com/rezariski42">
   <img src="./assets/sunset-header.svg" width="100%" alt="Reyzha Rizky - Systems Engineer & Security Analyst" />
 </a>
 
@@ -50,8 +50,8 @@
         Operating across the full execution lifecycle: configuring core BGP/VLAN routing, engineering scalable Laravel service backends, writing deterministic Unity/Roblox game loops, and auditing mobile kernels and web endpoints for zero-day logic flaws.
       </p>
       <pre>
-[operator@rezariski ~]$ cat spec.env
-IDENTIFIER : Reyzha Rizky (@rezariski)
+[operator@rezariski42 ~]$ cat spec.env
+IDENTIFIER : Reyzha Rizky (@rezariski42)
 TARGET OS  : Linux • macOS • Windows • Android • iOS
 BACKEND    : Laravel • REST APIs • MySQL • Redis
 ENGINES    : Unity 6 (URP/HLSL) • Roblox (Luau)
@@ -61,12 +61,12 @@ STATUS     : Systems Active // All Nodes OK
       </pre>
     </td>
     <td width="32%" align="center" valign="middle">
-      <a href="https://github.com/rezariski42/rezariski42">
-        <img src="https://github.com/rezariski42/rezariski42.png" width="125" style="border-radius: 50%; border: 3px solid #F59E0B; box-shadow: 0 0 25px rgba(245, 158, 11, 0.45);" alt="Reyzha Avatar" />
+      <a href="https://github.com/rezariski42">
+        <img src="https://github.com/rezariski42.png" width="125" style="border-radius: 50%; border: 3px solid #F59E0B; box-shadow: 0 0 25px rgba(245, 158, 11, 0.45);" alt="Reyzha Avatar" />
       </a>
       <br/><br/>
       <b>Reyzha Rizky</b><br/>
-      <code>@rezariski</code><br/>
+      <code>@rezariski42</code><br/>
       <small>All-Terrain Tech Engineer</small>
     </td>
   </tr>
@@ -209,9 +209,9 @@ STATUS     : Systems Active // All Nodes OK
           <b>⚡ OPERATOR IDENTITY CONSOLE</b> &nbsp;•&nbsp; <code>ONLINE [CACHYOS_X86_64]</code>
         </p>
         <pre style="margin: 0; line-height: 1.45; font-family: 'JetBrains Mono', monospace; font-size: 12px; background: transparent; border: none; color: #fde68a;">
-┌──(operator㉿rezariski)-[~/profile/identity]
+┌──(operator㉿rezariski42)-[~/profile/identity]
 └─$ whoami --telemetry
-[IDENTITY] : rezariski
+[IDENTITY] : rezariski42
 [REPO_URI] : github.com/rezariski42/rezariski42
 [ROLE]     : Full-Stack Dev • Game Architect • NetOps • Bug Hunter
 [SECURITY] : PGP-VERIFIED // KERNEL-LEVEL AUDIT CLEARED
@@ -220,10 +220,10 @@ STATUS     : Systems Active // All Nodes OK
         </pre>
       </div>
       <div align="center" style="padding-top: 10px;">
-        <img src="https://img.shields.io/badge/USER-rezariski42-sys-F59E0B?style=for-the-badge&logo=github&logoColor=white&labelColor=140E26" alt="User Badge" />
-        <img src="https://img.shields.io/badge/REPO-rezariski42%2Frezariski42-sys%2Fonegamer042-sys-3B82F6?style=for-the-badge&logo=git&logoColor=white&labelColor=140E26" alt="Repo Badge" />
-        <img src="https://img.shields.io/github/last-commit/rezariski/rezariski?style=for-the-badge&logo=github&color=10B981&label=LAST%20COMMIT&labelColor=140E26" alt="Last Commit Badge" />
-        <img src="https://img.shields.io/github/repo-size/rezariski/rezariski?style=for-the-badge&logo=database&color=EC4899&label=REPO%20SIZE&labelColor=140E26" alt="Repo Size Badge" />
+        <img src="https://img.shields.io/badge/USER-rezariski42-F59E0B?style=for-the-badge&logo=github&logoColor=white&labelColor=140E26" alt="User Badge" />
+        <img src="https://img.shields.io/badge/REPO-rezariski42%2Frezariski42-3B82F6?style=for-the-badge&logo=git&logoColor=white&labelColor=140E26" alt="Repo Badge" />
+        <img src="https://img.shields.io/github/last-commit/rezariski42/rezariski42?style=for-the-badge&logo=github&color=10B981&label=LAST%20COMMIT&labelColor=140E26" alt="Last Commit Badge" />
+        <img src="https://img.shields.io/github/repo-size/rezariski42/rezariski42?style=for-the-badge&logo=database&color=EC4899&label=REPO%20SIZE&labelColor=140E26" alt="Repo Size Badge" />
       </div>
     </td>
   </tr>
@@ -308,10 +308,10 @@ STATUS     : Systems Active // All Nodes OK
 </p>
 
 <p>
-  <a href="https://github.com/rezariski42/rezariski42">
-    <img src="https://img.shields.io/badge/GitHub-rezariski-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://github.com/rezariski42">
+    <img src="https://img.shields.io/badge/GitHub-rezariski42-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="mailto:rezariski@users.noreply.github.com">
+  <a href="mailto:rezariski42@users.noreply.github.com">
     <img src="https://img.shields.io/badge/Email-Direct%20Inquiry-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://discord.com">
