@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- FULL-SPECTRUM SUNSET CYBER HERO BANNER -->
-<a href="https://github.com/rezariski">
+<a href="https://github.com/onegamer042-sys/onegamer042-sys">
   <img src="./assets/sunset-header.svg" width="100%" alt="Reyzha Rizky - Systems Engineer & Security Analyst" />
 </a>
 
@@ -61,8 +61,8 @@ STATUS     : Systems Active // All Nodes OK
       </pre>
     </td>
     <td width="32%" align="center" valign="middle">
-      <a href="https://github.com/rezariski">
-        <img src="https://github.com/rezariski.png" width="125" style="border-radius: 50%; border: 3px solid #F59E0B; box-shadow: 0 0 25px rgba(245, 158, 11, 0.45);" alt="Reyzha Avatar" />
+      <a href="https://github.com/onegamer042-sys/onegamer042-sys">
+        <img src="https://github.com/onegamer042-sys/onegamer042-sys.png" width="125" style="border-radius: 50%; border: 3px solid #F59E0B; box-shadow: 0 0 25px rgba(245, 158, 11, 0.45);" alt="Reyzha Avatar" />
       </a>
       <br/><br/>
       <b>Reyzha Rizky</b><br/>
@@ -212,7 +212,7 @@ STATUS     : Systems Active // All Nodes OK
 ┌──(operator㉿rezariski)-[~/profile/identity]
 └─$ whoami --telemetry
 [IDENTITY] : rezariski
-[REPO_URI] : github.com/rezariski/rezariski
+[REPO_URI] : github.com/onegamer042-sys/onegamer042-sys
 [ROLE]     : Full-Stack Dev • Game Architect • NetOps • Bug Hunter
 [SECURITY] : PGP-VERIFIED // KERNEL-LEVEL AUDIT CLEARED
 [UPTIME]   : 99.98% // HIGH-CONCURRENCY WORKSTATION
@@ -220,8 +220,8 @@ STATUS     : Systems Active // All Nodes OK
         </pre>
       </div>
       <div align="center" style="padding-top: 10px;">
-        <img src="https://img.shields.io/badge/USER-rezariski-F59E0B?style=for-the-badge&logo=github&logoColor=white&labelColor=140E26" alt="User Badge" />
-        <img src="https://img.shields.io/badge/REPO-rezariski%2Frezariski-3B82F6?style=for-the-badge&logo=git&logoColor=white&labelColor=140E26" alt="Repo Badge" />
+        <img src="https://img.shields.io/badge/USER-onegamer042-sys-F59E0B?style=for-the-badge&logo=github&logoColor=white&labelColor=140E26" alt="User Badge" />
+        <img src="https://img.shields.io/badge/REPO-onegamer042-sys%2Fonegamer042-sys-3B82F6?style=for-the-badge&logo=git&logoColor=white&labelColor=140E26" alt="Repo Badge" />
         <img src="https://img.shields.io/github/last-commit/rezariski/rezariski?style=for-the-badge&logo=github&color=10B981&label=LAST%20COMMIT&labelColor=140E26" alt="Last Commit Badge" />
         <img src="https://img.shields.io/github/repo-size/rezariski/rezariski?style=for-the-badge&logo=database&color=EC4899&label=REPO%20SIZE&labelColor=140E26" alt="Repo Size Badge" />
       </div>
@@ -281,15 +281,15 @@ STATUS     : Systems Active // All Nodes OK
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats-pi-six.vercel.app/api?username=rezariski&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117&title_color=F59E0B&icon_color=EC4899&text_color=FDE68A" width="100%" alt="GitHub Overall Stats" />
+      <img src="https://github-readme-stats-pi-six.vercel.app/api?username=onegamer042-sys&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117&title_color=F59E0B&icon_color=EC4899&text_color=FDE68A" width="100%" alt="GitHub Overall Stats" />
     </td>
     <td width="50%" align="center">
-      <img src="https://streak-stats.demolab.com/?user=rezariski&theme=tokyonight&hide_border=true&background=0D1117&ring=F59E0B&fire=EC4899&currStreakLabel=F59E0B&sideLabels=FDE68A&dates=E2E8F0" width="100%" alt="GitHub Streak Stats" />
+      <img src="https://streak-stats.demolab.com/?user=onegamer042-sys&theme=tokyonight&hide_border=true&background=0D1117&ring=F59E0B&fire=EC4899&currStreakLabel=F59E0B&sideLabels=FDE68A&dates=E2E8F0" width="100%" alt="GitHub Streak Stats" />
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="https://github-readme-stats-pi-six.vercel.app/api/top-langs/?username=rezariski&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&text_color=FDE68A" width="65%" alt="Top Languages" />
+      <img src="https://github-readme-stats-pi-six.vercel.app/api/top-langs/?username=onegamer042-sys&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&text_color=FDE68A" width="65%" alt="Top Languages" />
     </td>
   </tr>
 </table>
@@ -308,7 +308,7 @@ STATUS     : Systems Active // All Nodes OK
 </p>
 
 <p>
-  <a href="https://github.com/rezariski">
+  <a href="https://github.com/onegamer042-sys/onegamer042-sys">
     <img src="https://img.shields.io/badge/GitHub-rezariski-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   <a href="mailto:rezariski@users.noreply.github.com">
